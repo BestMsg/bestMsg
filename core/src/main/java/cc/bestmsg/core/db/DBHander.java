@@ -9,4 +9,8 @@ public interface DBHander {
 
     public Connection getConnection();
     public void closeConnection(Connection conn);
+    
+//    int executeUpdate(String sql);
+//    int executeUpdate(String sql, Object[] parameters);
+
 }

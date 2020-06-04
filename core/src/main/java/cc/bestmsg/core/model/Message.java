@@ -5,6 +5,7 @@ import cc.bestmsg.core.constant.MsgType;
 import lombok.Data;
 
 /**
+ * table name: best_messages
  * Created by  songzip on 2020/3/16.
  */
 @Data
@@ -21,7 +22,7 @@ public class Message {
      */
     String fromUserId;
     
-    String fromUserNickName;
+    String nickName;
 
     String toUserId;
     /**
@@ -32,10 +33,11 @@ public class Message {
     /**
      * send out time unix ms
      */
-    int time;
+    long time;
 
     /**
-     * 
+     * 1: read
+     * 0: unread
      */
     MsgStatus status;
     
